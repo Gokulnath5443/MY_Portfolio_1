@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Profile</title>
+  <style>
+    * {
+      margin: 0%;
+      padding: 0%;
+    }
+
+    .div1 {
+      height: max-content;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
+
+    video {
+      z-index: -1;
+      position: relative;
+      opacity: 0.5;
+      width: 100%;
+
+
+
+    }
+
+    .mainheading {
+      z-index: 1;
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+    }
+
+    .subheading {
+      font-size: 550%;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+    .name {
+
+      font-size: 150%;
+    }
+
+    /* footer section start */
+    footer {
+      height: max-content;
+      background-color: #eeeeee;
+    }
+
+    .footersection {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .footerlogomain {
+
+      display: flex;
+      width: 50%;
+      justify-content: space-around;
+
+    }
+
+    .footerlogoimg {
+      width: 45%;
+
+    }
+
+    .copyright {
+      width: 50%;
+      display: flex;
+      justify-content: center;
+      font-size: large;
+    }
+
+    /*  */
+
+    .subheading {
+      font-size: 120px;
+      -webkit-text-stroke: 1px #ffffff;
+      color: transparent;
+      background-image: linear-gradient(#181818, #fff);
+      background-repeat: no-repeat;
+      -webkit-background-clip: text;
+      background-position: -850px 0;
+      animation: backcolor 5s linear infinite alternate;
+
+    }
+
+    @keyframes backcolor {
+      100% {
+        background-position: 0 0;
+      }
+    }
+
+    .name {
+      font-size: 50px;
+      font-weight: bold;
+      -webkit-text-stroke: 1px #f7f7f7;
+      color: transparent;
+      background-image: linear-gradient(#181818, #fff);
+      background-repeat: no-repeat;
+      -webkit-background-clip: text;
+      background-position: -350px 0;
+      animation: backcolor 5s linear infinite alternate;
+
+    }
+
+    @keyframes backcolor {
+      100% {
+        background-position: 0 0;
+      }
+    }
+
+    /*  */
+    .nav {
+      display: flex;
+  
+      justify-content: space-evenly;
+      align-items: center;
+     
+      position: absolute;
+      margin-top:-57%;
+      width: 100%;
+      
+
+    }
+
+    .navbody {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .navimg {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 80px;
+    }
+
+    .png {
+      width: 40px;
+      animation: png 3s infinite alternate;
+    }
+
+    @keyframes png {
+      0% {
+        margin-top: 10px;
+      }
+
+      50% {
+        margin-top: 20px;
+      }
+
+      75% {
+        margin-top: 10px;
+      }
+
+      100% {
+        margin-top: 20px;
+      }
+    }
+
+    .navcon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: bold;
+      font-size: 20px;
+
+    }
+    a {
+      text-decoration: none;
+      color: black;
+    }
+
+      .video2 {
+      z-index: 1;
+      position: relative;
+      opacity: 0.5;
+      display: none;
+      
+   
+
+    }
+    /*  */
+  @media (max-width:768px){
+     .subheading {
+      font-size: 80px;
+      -webkit-text-stroke: 1px #ffffff;
+      color: transparent;
+      background-image: linear-gradient(#181818, #fff);
+      background-repeat: no-repeat;
+      -webkit-background-clip: text;
+      background-position: -850px 0;
+      animation: backcolor 5s linear infinite alternate;
+
+    }
+       .name {
+      font-size: 45px;
+      font-weight: bold;
+      -webkit-text-stroke: 1px #f7f7f7;
+      color: transparent;
+      background-image: linear-gradient(#181818, #fff);
+      background-repeat: no-repeat;
+      -webkit-background-clip: text;
+      background-position: -350px 0;
+      animation: backcolor 5s linear infinite alternate;
+
+    }
+
+}
+/*  */
+@media (max-width:425px){
+   .subheading {
+      font-size: 30px;
+      -webkit-text-stroke: 1px #ffffff;
+      color: transparent;
+      background-image: linear-gradient(#000000, #fff6f6);
+      background-repeat: no-repeat;
+      -webkit-background-clip: text;
+      background-position: -850px 0;
+      animation: backcolor 4s linear infinite alternate;
+
+    }
+       .name {
+      font-size: 25px;
+      font-weight: bold;
+      -webkit-text-stroke: 1px #f7f7f7;
+      color: transparent;
+      background-image: linear-gradient(#000000, #ffe9e9);
+      background-repeat: no-repeat;
+      -webkit-background-clip: text;
+      background-position: -350px 0;
+      animation: backcolor 4s linear infinite alternate;
+
+    }
+      .video1 {
+      z-index: -1;
+      position: relative;
+      opacity: 0.5;
+      width: 800px;
+      height: 450px;
+      overflow-x: hidden;
+      transform: rotate(90deg);
+
+    }
+
+     .png {
+      width: 25px;
+      animation: png 3s infinite alternate;
+    }
+     .navcon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: bold;
+      font-size: 12px;
+
+
+    }
+    .div1{
+      overflow-x: hidden;
+      overflow-y: hidden;
+    }
+   
+     .footerlogoimg {
+      width: 75%;
+
+    }
+
+    .copyright {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      font-size: 12px;
+      margin-bottom: 1%;
+      margin-top: 1%;
+    }
+     .footersection {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .footerlogomain {
+
+      display: flex;
+      width: 100%;
+      justify-content: space-around;
+
+    }
+     .nav {
+      display: flex;
+  
+      justify-content: space-evenly;
+      align-items: center;
+     
+      position: absolute;
+      margin-top:-110%;
+      width: 100%;
+      
+
+    }
+
+}
+/*  */
+@media (max-width:375px){
+   .subheading {
+      font-size: 30px;
+      -webkit-text-stroke: 1px #ffffff;
+      color: transparent;
+      background-image: linear-gradient(#000000, #fff6f6);
+      background-repeat: no-repeat;
+      -webkit-background-clip: text;
+      background-position: -850px 0;
+      animation: backcolor 4s linear infinite alternate;
+
+    }
+       .name {
+      font-size: 25px;
+      font-weight: bold;
+      -webkit-text-stroke: 1px #f7f7f7;
+      color: transparent;
+      background-image: linear-gradient(#000000, #ffe9e9);
+      background-repeat: no-repeat;
+      -webkit-background-clip: text;
+      background-position: -350px 0;
+      animation: backcolor 4s linear infinite alternate;
+
+    }
+      .video1 {
+      z-index: -1;
+      position: relative;
+      opacity: 0.5;
+      width: 700px;
+      height: 500px;
+      overflow-x: hidden;
+      transform: rotate(90deg);
+
+    }
+
+     .png {
+      width: 25px;
+      animation: png 3s infinite alternate;
+    }
+     .navcon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: bold;
+      font-size: 12px;
+
+
+    }
+    .div1{
+      overflow-x: hidden;
+      overflow-y: hidden;
+    }
+   
+     .footerlogoimg {
+      width: 65%;
+
+    }
+
+    .copyright {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      font-size: 12px;
+      margin-bottom: 1%;
+      margin-top: 1%;
+    }
+     .footersection {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .footerlogomain {
+
+      display: flex;
+      width: 100%;
+      justify-content: space-around;
+
+    }
+     .nav {
+      display: flex;
+  
+      justify-content: space-evenly;
+      align-items: center;
+     
+      position: absolute;
+      margin-top:-134%;
+      width: 100%;
+      
+
+    }
+
+}
+/*  */
+@media (max-width:320px){
+
+     .subheading {
+      font-size: 30px;
+      -webkit-text-stroke: 1px #ffffff;
+      color: transparent;
+      background-image: linear-gradient(#000000, #000000);
+      background-repeat: no-repeat;
+      -webkit-background-clip: text;
+      background-position: -850px 0;
+      animation: backcolor 4s linear infinite alternate;
+
+    }
+       .name {
+      font-size: 25px;
+      font-weight: bold;
+      -webkit-text-stroke: 1px #ffffff;
+      color: transparent;
+      background-image: linear-gradient(#000000, #000000);
+      background-repeat: no-repeat;
+      -webkit-background-clip: text;
+      background-position: -350px 0;
+      animation: backcolor 4s linear infinite alternate;
+
+    }
+      .video1 {
+      z-index: -1;
+      position: relative;
+      opacity: 0.5;
+      display: none;
+   
+
+    }
+
+     .video2 {
+      z-index: 1;
+      position: relative;
+      opacity: 0.5;
+      display: unset;
+      
+   
+
+    }
+
+     .png {
+      width: 25px;
+      animation: png 3s infinite alternate;
+    }
+     .navcon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: bold;
+      font-size: 12px;
+
+
+    }
+    .div1{
+      overflow-x: hidden;
+      overflow-y: hidden;
+      background-color: #cfcfcf;
+      z-index: -1;
+    }
+   
+     .footerlogoimg {
+      width: 65%;
+
+    }
+
+    .copyright {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      font-size: 12px;
+      margin-bottom: 1%;
+      margin-top: 1%;
+    }
+     .footersection {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .footerlogomain {
+
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      justify-content: space-evenly;
+
+    }
+     .nav {
+      display: flex;
+  
+      justify-content: space-evenly;
+      align-items: center;
+     
+      position: absolute;
+      margin-top:-180%;
+      width: 100%;
+      
+
+    }
+}
+
+
+
+
+
+
+
+  </style>
+
+
+
+
+
+
+</head>
+
+<body>
+
+  <!-- body section -->
+  <div class="div1">
+    <video class="video1" src="./assert/91069-628462649_tiny.mp4" autoplay muted loop>
+
+    </video>
+      <video class="video2" src="./assert/n7.mp4" autoplay muted loop>
+
+    </video>
+    <div class="mainheading">
+      <div class="subheading">MY Protfolio</div>
+      <div class="name">GOKULNATH</div>
+    </div>
+  </div>
+  <!-- nav  -->
+
+  <div class="nav">
+    <!--  -->
+    <div class="navbody">
+ 
+      <div class="navimg">
+        <a href=""> <img class="png" src="./assert/home.png" alt=""> </a>
+      </div>
+      <div class="navcon">
+        <a href="index.html">
+          <div class="navcon1"> Home</div>
+        </a>
+      </div>
+
+    </div> 
+    <!--  -->
+    <div class="navbody">
+
+      <div class="navimg">
+        <a href=""> <img class="png" src="./assert/about.png" alt=""> </a>
+      </div>
+      <div class="navcon">
+        <a href="about.html">
+          <div class="navcon1">About</div>
+        </a>
+      </div>
+
+    </div> 
+    
+    <div class="navbody">
+
+      <div class="navimg">
+        <a href=""> <img class="png" src="./assert/project-management.png" alt=""> </a>
+      </div>
+      <div class="navcon">
+        <a href="project.html">
+          <div class="navcon1">Project</div>
+        </a>
+      </div>
+
+    </div>
+    
+    <div class="navbody">
+
+      <div class="navimg">
+        <a href=""> <img class="png" src="./assert/contact-us.png" alt=""> </a>
+      </div>
+      <div class="navcon">
+        <a href="contact.html">
+          <div class="navcon1">Contact</div>
+          </a>
+      </div>
+
+    </div>
+    
+    <div class="navbody">
+
+      <div class="navimg">
+        <a href="archivement.html"> <img class="png" src="./assert/start-up.png" alt=""> </a>
+      </div>
+      <div class="navcon">
+        <a href="archivement.html">
+          <div class="navcon1">Achive</div>
+        </a>
+      </div>
+
+    </div>
+    
+
+  </div>
+
+ <!--  -->
+   <footer>
+        <div class="footersection">
+            <!-- copyright -->
+            <div class="copyright">
+                ...&copy;2025|@gokul...
+            </div>
+            <!--  -->
+        
+
+            <!-- footerlogo -->
+            <div class="footerlogomain">
+                <a class="footerlogo " href=""> <img class="footerlogoimg" src="./assert/f1.png" alt=""></a>
+                <a class="footerlogo " href=""> <img class="footerlogoimg" src="./assert/f2.png" alt=""></a>
+                <a class="footerlogo " href=""> <img class="footerlogoimg" src="./assert/f3.png" alt=""></a>
+                <a class="footerlogo " href=""> <img class="footerlogoimg" src="./assert/f4.png" alt=""></a>
+                <a class="footerlogo " href=""> <img class="footerlogoimg" src="./assert/f5.png" alt=""></a>
+            </div>
+        </div>
+
+</body>
+
+</html>

@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    * {
+      margin: 0%;
+      padding: 0%;
+    }
+
+    .maindiv {
+      width: 100%;
+      position: relative;
+      background-color: rgb(0, 0, 0);
+    }
+
+    video {
+      width: 100%;
+      opacity: 0.4;
+      z-index: -1;
+    }
+
+    .projectmain {
+      width: 100%;
+      position: absolute;
+      z-index: 1;
+      margin-top: -700px;
+    }
+
+    /* ............. */
+
+
+    .projectcontent {
+      display: flex;
+      flex-wrap: wrap;
+
+    }
+
+
+    .project1 {
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border-right: 6px solid white;
+      line-height: 45px;
+      width: 33%;
+
+
+    }
+
+    .video2 {
+      display: none;
+    }
+
+
+    .project2 {
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border-right: 6px solid white;
+      line-height: 45px;
+      width: 33%;
+    }
+
+    .project3 {
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      line-height: 45px;
+      width: 33%;
+
+
+    }
+
+    .projectheading {
+      display: flex;
+      justify-content: center;
+      color: white;
+      font-size: xx-large;
+      font-weight: bold;
+    }
+    .projectheading:hover {
+      text-decoration:underline ;
+    }
+
+    .project_title {
+      font-size: 2rem;
+    }
+     .project_title:hover {
+      text-decoration:underline ;
+    }
+
+    a {
+      color: white;
+      text-decoration: none;
+    }
+
+    .folder {
+      width: 30%;
+    }
+
+    .anchor {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .projectmain {
+      display: flex;
+      flex-direction: column;
+      row-gap: 40px;
+    }
+
+    .opena {
+      border: 1px solid white;
+      padding: 5px 5px;
+      border-radius: 5px;
+    }
+
+    .opena:hover {
+      background-color: white;
+      color: black;
+    }
+
+    .gitname {
+      font-size: 36px;
+      font-weight: bold;
+      
+    }
+
+    .git {
+      font-size: 18px;
+   
+    }
+
+    .gitimage {
+      width: 100%;
+        margin-bottom: 30px;
+    }
+     .projectcontent1 {
+      display:none;
+      flex-wrap: wrap;
+
+    }
+    .backfor{
+      width: 40px;
+      margin-right: 13px;
+    }
+
+    /* ...... */
+    @media (max-width:1440px) {
+      .video2 {
+        display: none;
+      }
+      .video3 {
+        display: none;
+      }
+      .video1 {
+        display: none;
+      }
+     
+      
+    }
+
+    /*  */
+    @media (max-width:1024px) {
+      .project1 {
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-right: 6px solid white;
+        line-height: 40px;
+        width: 32%;
+
+      }
+.video2 {
+        display: none;
+      }
+      .video3 {
+        display: none;
+      }
+      .video1 {
+        display: none;
+      }
+      .project2 {
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-right: 6px solid white;
+        line-height: 40px;
+        width: 32%;
+      }
+
+      .project3 {
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        line-height: 40px;
+        width: 32%;
+      }
+
+      .projectmain {
+        width: 100%;
+        position: absolute;
+        z-index: 1;
+        margin-top: -580px;
+      }
+
+    .gitimage {
+      width: 100%;
+        margin-bottom: 10px;
+    }
+
+
+    }
+
+    /*  */
+    @media (max-width:768px) {
+      .project1 {
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-right: 0px solid rgb(255, 12, 12);
+        line-height: 35px;
+        width: 48%;
+
+
+      }
+
+      .project2 {
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-right: 0px solid white;
+        line-height:35px;
+        width: 48%;
+      }
+
+      .project3 {
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        line-height: 35px;
+        width: 48%;
+      }
+
+      .projectmain {
+        width: 100%;
+        position: absolute;
+        z-index: 1;
+        margin-top: -110%;
+      }
+
+      video {
+        width: 100%;
+        opacity: 0.9;
+        z-index: -1;
+        display: none;
+
+      }
+
+      .maindiv {
+        width: 100%;
+
+        position: relative;
+        background-color: rgb(32, 32, 32);
+      }
+
+      .projectheading {
+        display: flex;
+        justify-content: center;
+        color: white;
+        font-size: xx-large;
+        font-weight: bold;
+      }
+
+      .project_title {
+        font-size: 1.7rem;
+      }
+
+      .gitname {
+        font-size: 30px;
+        font-weight: bold;
+      }
+
+      .git {
+        font-size: 15px;
+      }
+
+      .gitimage {
+        width: 80%;
+      }
+
+      .video1{
+        display: flex;
+     
+           width: 100%;
+        opacity: 0.2;
+        z-index: -1;  
+      }
+      .video2 {
+        display: flex;
+   
+           width: 100%;
+        opacity: 0.2;
+        z-index: -1;  
+        transform: rotate(180deg);
+        box-shadow: 3px 3px 18px rgb(4, 4, 92);
+        
+      }
+      .maindiv{
+        position: relative;
+      }
+      
+        .projectcontent {
+      display: none;
+      flex-wrap: wrap;
+
+    }
+      
+        .projectcontent1 {
+      display:flex;
+      flex-wrap: wrap;
+      row-gap: 30px;
+
+    }
+    .pro1{
+      border-right: 5px solid white;
+    }
+     
+    } 
+
+    /*  */
+   @media (max-width:425px) {
+      .project1 {
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-right: 0px solid rgb(255, 12, 12);
+        line-height: 35px;
+        width: 48%;
+
+
+      }
+
+      .project2 {
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-right: 0px solid white;
+        line-height:35px;
+        width: 48%;
+      }
+
+      .project3 {
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        line-height: 35px;
+        width: 48%;
+      }
+
+      .projectmain {
+        width: 100%;
+        position: absolute;
+        z-index: 1;
+        margin-top: -160%;
+      }
+
+      video {
+        width: 100%;
+        opacity: 0.9;
+        z-index: -1;
+        display: none;
+
+      }
+
+      .maindiv {
+        width: 100%;
+
+        position: relative;
+        background-color: rgb(32, 32, 32);
+      }
+
+      .projectheading {
+        display: flex;
+        justify-content: center;
+        color: white;
+        font-size: xx-large;
+        font-weight: bold;
+      }
+
+      .project_title {
+        font-size: 1.7rem;
+      }
+
+      .gitname {
+        font-size: 30px;
+        font-weight: bold;
+      }
+
+      .git {
+        font-size: 15px;
+      }
+
+      .gitimage {
+        width: 80%;
+      }
+
+      .video1{
+        display: flex;
+     
+           width: 100%;
+        opacity: 0.2;
+        z-index: -1;  
+      }
+        .video3{
+        display: flex;
+     
+           width: 100%;
+        opacity: 0.2;
+        z-index: -1;  
+      }
+      .video2 {
+        display: flex;
+   
+           width: 100%;
+        opacity: 0.2;
+        z-index: -1;  
+        transform: rotate(180deg);
+        box-shadow: 3px 3px 18px rgb(4, 4, 92);
+        
+      }
+      .maindiv{
+        position: relative;
+      }
+      
+        .projectcontent {
+      display: none;
+      flex-wrap: wrap;
+
+    }
+      
+        .projectcontent1 {
+      display:flex;
+      flex-wrap: wrap;
+      row-gap: 30px;
+
+    }
+    .pro1{
+      border-right: 5px solid white;
+    }
+     
+    } 
+    /*  */
+    @media (max-width:375px) {
+      .project1 {
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-right: 0px solid rgb(255, 12, 12);
+        line-height: 30px;
+        width: 48%;
+
+
+      }
+
+      .project2 {
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-right: 0px solid white;
+        line-height:30px;
+        width: 48%;
+      }
+
+      .project3 {
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        line-height: 30px;
+        width: 48%;
+      }
+
+      .projectmain {
+        width: 100%;
+        position: absolute;
+        z-index: 1;
+        margin-top: -160%;
+      }
+
+      video {
+        width: 100%;
+        opacity: 0.9;
+        z-index: -1;
+        display: none;
+
+      }
+
+      .maindiv {
+        width: 100%;
+
+        position: relative;
+        background-color: rgb(32, 32, 32);
+      }
+
+      .projectheading {
+        display: flex;
+        justify-content: center;
+        color: white;
+        font-size: xx-large;
+        font-weight: bold;
+      }
+
+      .project_title {
+        font-size: 1.4rem;
+      }
+
+      .gitname {
+        font-size: 25px;
+        font-weight: bold;
+      }
+
+      .git {
+        font-size: 15px;
+      }
+
+      .gitimage {
+        width: 60%;
+      }
+
+      .video1{
+        display: flex;
+     
+           width: 100%;
+        opacity: 0.2;
+        z-index: -1;  
+      }
+        .video3{
+        display: flex;
+     
+           width: 100%;
+        opacity: 0.2;
+        z-index: -1;  
+      }
+      .video2 {
+        display: flex;
+   
+           width: 100%;
+        opacity: 0.2;
+        z-index: -1;  
+        transform: rotate(180deg);
+        box-shadow: 3px 3px 18px rgb(4, 4, 92);
+        
+      }
+      .maindiv{
+        position: relative;
+      }
+      
+        .projectcontent {
+      display: none;
+      flex-wrap: wrap;
+
+    }
+      
+        .projectcontent1 {
+      display:flex;
+      flex-wrap: wrap;
+      row-gap: 30px;
+
+    }
+    .pro1{
+      border-right: 5px solid white;
+    }
+     
+    } 
+
+    /*  */
+    @media (max-width:320px) {
+      .project1 {
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-right: 0px solid rgb(255, 12, 12);
+        line-height: 30px;
+        width: 48%;
+
+
+      }
+
+      .project2 {
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-right: 0px solid white;
+        line-height:30px;
+        width: 48%;
+      }
+
+      .project3 {
+        color: white;
+        display: flex;
+        flex-direction: column;
+        border-right: 0px solid white;
+        justify-content: center;
+        align-items: center;
+        line-height: 30px;
+        width: 48%;
+      }
+
+      .projectmain {
+        width: 100%;
+        position: absolute;
+        z-index: 1;
+        margin-top: -167%;
+      }
+
+      video {
+        width: 100%;
+        opacity: 0.9;
+        z-index: -1;
+        display: none;
+
+      }
+
+      .maindiv {
+        width: 100%;
+
+        position: relative;
+        background-color: rgb(32, 32, 32);
+      }
+
+      .projectheading {
+        display: flex;
+        justify-content: center;
+        color: white;
+        font-size: x-large;
+        font-weight: bold;
+       
+      }
+
+      .project_title {
+        font-size: 1.4rem;
+      }
+
+      .gitname {
+        font-size: 25px;
+        font-weight: bold;
+      }
+
+      .git {
+        font-size: 15px;
+      }
+
+      .gitimage {
+        width: 40%;
+      }
+
+      .video1{
+        display: flex;
+     
+           width: 100%;
+        opacity: 0.2;
+        z-index: -1;  
+      }
+        .video3{
+        display: flex;
+     
+           width: 100%;
+        opacity: 0.2;
+        z-index: -1;  
+      }
+      .video2 {
+        display: flex;
+   
+           width: 100%;
+        opacity: 0.2;
+        z-index: -1;  
+        transform: rotate(180deg);
+        box-shadow: 3px 3px 18px rgb(4, 4, 92);
+        
+      }
+      .maindiv{
+        position: relative;
+      }
+      
+        .projectcontent {
+      display: none;
+      flex-wrap: wrap;
+
+    }
+      
+        .projectcontent1 {
+      display:flex;
+      flex-wrap: wrap;
+      row-gap: 20px;
+
+    }
+    .backfor{
+      width: 40px;
+      margin-right: 7px;
+    margin-top: -8px;
+    padding: 0%;
+  
+    }
+     
+    } 
+     
+
+
+  </style>
+
+
+
+</head>
+
+<body>
+  <!-- .............. -->
+  <div class="maindiv">
+    <video src="./assert/compu.mp4" autoplay muted loop></video>
+    <video class="video1" src="./assert/earth.mp4" autoplay muted loop></video>
+    <video class="video2" src="./assert/earth.mp4" autoplay muted loop></video>
+    <video class="video3" src="./assert/earth.mp4" autoplay muted loop></video>
+
+  </div>
+
+
+  <!-- .................. -->
+  <div class="projectmain">
+
+    <div class="projectheading">
+     <span><a href="index.html  "><img class="backfor" src="./assert/back forword.png" alt=""></a></span> MY PROJECTS
+
+    </div>
+
+    <!-- project list1 -->
+    <div class="projectcontent">
+      <div class="project1">
+        <div class="project_title">Project A</div>
+        <div>Pothysmart</div>
+        <div class="folderdiv"><a class="anchor" href="project1.html"><img class="folder" src="./assert/fold.png"
+              alt=""></a></div>
+        <div class="open"><a class="opena" href="project1.html">Open</a></div>
+
+      </div>
+      <!--  -->
+      <div class="project2">
+        <div class="project_title">Project B</div>
+        <div> Pricing Cards</div>
+        <div class="folderdiv"><a class="anchor" href="project2.html"><img class="folder" src="./assert/fold.png"
+              alt=""></a></div>
+        <div class="open"><a class="opena" href="project2.html">Open</a></div>
+      </div>
+      <!--  -->
+      <div class="project3">
+        <div class="project_title">Project C</div>
+        <div>Contract_Management</div>
+        <div class="folderdiv"><a class="anchor" href="project3.html"><img class="folder" src="./assert/fold.png"
+              alt=""></a></div>
+        <div class="open"><a class="opena" href="project3.html">Open</a></div>
+      </div>
+      <!--  -->
+
+    </div>
+    <!-- project list2 -->
+    <div class="projectcontent">
+      <div class="project1">
+        <div class="project_title">Project D</div>
+        <div> Grid Layout</div>
+        <div class="folderdiv"><a class="anchor" href="project4.html"><img class="folder" src="./assert/fold.png"
+              alt=""></a></div>
+        <div class="open"><a class="opena" href="project4.html">Open</a></div>
+
+      </div>
+      <!--  -->
+      <div class="project2">
+        <div class="project_title">Project E</div>
+        <div>SunnyCafe</div>
+        <div class="folderdiv"><a class="anchor" href="project5.html"><img class="folder" src="./assert/fold.png"
+              alt=""></a></div>
+        <div class="open"><a class="opena" href="project5.html">Open</a></div>
+      </div>
+      <!--  -->
+      <div class="project3">
+        <div class="project_title git">More Project</div>
+        <div class="gitname" >github</div>
+        <div class="folderdiv"><a class="anchor" href="https://github.com/"><img class="gitimage"
+              src="./assert/github.png" alt=""></a></div>
+        <div class="open"><a class="opena" href="https://github.com/">Open</a></div>
+      </div>
+      <!--  -->
+
+    </div>
+
+
+
+        <!-- project list1 -->
+    <div class="projectcontent1">
+      <div class="project1 pro1">
+        <div class="project_title ">Project A</div>
+        <div>Pothysmart</div>
+        <div class="folderdiv"><a class="anchor" href="project1.html"><img class="folder" src="./assert/fold.png"
+              alt=""></a></div>
+        <div class="open"><a class="opena" href="project1.html">Open</a></div>
+
+      </div>
+      <!--  -->
+      <div class="project2">
+        <div class="project_title">Project B</div>
+        <div> Pricing Cards</div>
+        <div class="folderdiv"><a class="anchor" href="project2.html"><img class="folder" src="./assert/fold.png"
+              alt=""></a></div>
+        <div class="open"><a class="opena" href="project2.html">Open</a></div>
+      </div>
+      <!--  -->
+      <div class="project3 pro1">
+        <div class="project_title ">Project C</div>
+        <div>Contract_Manage</div>
+        <div class="folderdiv"><a class="anchor" href="project3.html"><img class="folder" src="./assert/fold.png"
+              alt=""></a></div>
+        <div class="open"><a class="opena" href="project3.html">Open</a></div>
+      </div>
+      <!--  -->
+       <div class="project1">
+        <div class="project_title">Project D</div>
+        <div> Grid Layout</div>
+        <div class="folderdiv"><a class="anchor" href="project4.html"><img class="folder" src="./assert/fold.png"
+              alt=""></a></div>
+        <div class="open"><a class="opena" href="project4.html">Open</a></div>
+
+      </div>
+       
+      <!--  -->
+      <div class="project2 pro1">
+        <div class="project_title ">Project E</div>
+        <div>SunnyCafe</div>
+        <div class="folderdiv"><a class="anchor" href="project5.html"><img class="folder" src="./assert/fold.png"
+              alt=""></a></div>
+        <div class="open"><a class="opena" href="project5.html">Open</a></div>
+      </div>
+
+      <!--  -->
+      <div class="project3">
+        <div class="project_title git">More Project</div>
+        <div class="gitname" >github</div>
+        <div class="folderdiv"><a class="anchor" href="https://github.com/"><img class="gitimage"
+              src="./assert/github.png" alt=""></a></div>
+        <div class="open"><a class="opena" href="https://github.com/">Open</a></div>
+      </div>
+
+    </div>
+    <!-- project list2 -->
+ 
+
+
+
+
+
+
+  </div>
+
+
+  <!--  -->
+
+</body>
+
+</html>

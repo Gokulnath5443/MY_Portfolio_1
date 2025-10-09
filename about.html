@@ -1,0 +1,972 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="about.css">
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+           
+        }
+   
+
+        .heading {
+            display: flex;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 42px;
+            padding: 7px;
+
+            color: rgb(255, 255, 255);
+        }
+
+
+        .span1{
+            color: red;}
+
+        .span3{
+            
+            animation-name: span3;
+            animation-duration: 8s;
+            animation-iteration-count: infinite;
+            font-size: 43px;
+           
+        }
+
+            @keyframes span3{
+                
+                50%{
+                    padding-left: -70px;
+                    display: inline;
+                }
+               
+                75%{
+                    padding-right: 70px;
+                    display: inline;
+                }
+            
+            }
+        .span2{
+            color: red;
+            margin-left: 18px;
+        }
+        
+
+        .main {
+            width: 100%;
+            height: max-content;
+            background-color: rgb(44, 44, 44);
+            position: relative;
+
+        }
+
+        .video11 {
+            width: 100%;
+            
+            opacity: 0.1;
+
+        }
+
+        .maindiv {
+            width: 100%;
+            height: 650px;
+            display: flex;
+            flex-wrap: wrap;
+
+        }
+
+        .subdiv1 {
+            width: 50%;
+            
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .subdiv2 {
+            width: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: rgb(255, 255, 255);
+            flex-direction: column;
+            font-size: 63px;
+            font-weight: bold;
+        }
+
+        .me {
+            width: 370px;
+              box-shadow: 3px 3px 8px rgb(0, 0, 0);
+
+        }
+        .button1{
+            padding: 10px;
+            border-radius: 20px;
+            border: none;
+            font-weight: bold;
+        }
+        .button1:hover{
+            background-color: black;
+            box-shadow: 3px 3px 18px white;
+            color: white;
+        }
+        .sub{
+            width: 100%;
+            position: absolute;
+            margin-top: -720px;
+        }
+   /* ........... */
+    .ehead{
+      width: 100%;
+      font-weight: bold;
+      font-size: xxx-large;
+      justify-content: center;
+      display: flex;
+      color: rgb(0, 0, 0);
+      
+
+    }
+    #emain {
+      width: 100%;
+      height: max-content;
+
+      display: flex;
+      flex-direction: column;
+     
+     
+     
+    
+    }
+    .esub{
+      width: 100%;
+      background-size: cover;
+      display: flex;
+    }
+    .esub1{
+      width: 50%;
+      height:max-content;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     margin-top: 3%;
+     font-size: x-large;
+     padding: 0px 30px;
+     
+    }
+      .esub2{
+      width: 50%;
+      height:max-content;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     margin-top: 3%;
+     margin-bottom: 3%;
+    
+    
+     
+     
+    }
+    .me1{
+      width: 90%;
+      
+    }
+    .hi1{
+      font-size: 83px;
+     
+    }
+    .iam1{
+ font-size: 33px;
+  margin-top:20px;
+    }
+    .para1{
+margin-top: 4%;
+line-height: 40px;
+    }
+       .button2{
+            padding: 10px;
+            border-radius: 20px;
+            border: none;
+            font-weight: bold;
+            margin-top: 33px;
+        }
+        .button2:hover{
+            background-color: black;
+            box-shadow: 3px 3px 18px white;
+            color: white;
+        }
+
+
+    #main3 {
+      display: flex;
+      width: 100%;
+      height: max-content;
+
+    }
+
+    .ssub1 {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .ssub2 {
+      width: 50%;
+    }
+
+    .me4 {
+      width: 100%;
+    }
+    .about11{
+      width: 50%;
+      margin-top: 2%;
+    }
+    .video1{
+      width: 100%;
+      height: max-content;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+     .con{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 7%;
+      font-size: 33px;
+      font-weight: bold;
+    }
+     .button3{
+            padding: 10px;
+            border-radius: 20px;
+            border: none;
+            font-weight: bold;
+            margin-top: 13px;
+        }
+        .button3:hover{
+            background-color: black;
+            box-shadow: 3px 3px 18px white;
+            color: white;
+        }
+
+        .aboutmedia{
+          display: none;
+        }
+/* ............................................. */
+
+
+    .maing {
+      width: 100%;
+      height: max-content;
+      background-color: rgb(59, 59, 59);
+
+
+    }
+
+    .video11g {
+      width: 100%;
+
+      opacity: 0.1;
+
+    }
+
+    .headingg {
+      display: flex;
+      justify-content: center;
+      font-weight: bold;
+      font-size: 32px;
+
+      color: rgb(255, 255, 255);
+    }
+
+    .subg {
+      width: 100%;
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      margin-top: -120px;
+
+    }
+
+
+    .span1g {
+      color: red;
+    }
+
+    .span3g {
+
+      animation-name: span3g;
+      animation-duration: 8s;
+      animation-iteration-count: infinite;
+      font-size: 32px;
+
+    }
+
+    @keyframes span3g {
+
+      50% {
+        padding-left: -40px;
+        display: inline;
+      }
+
+      75% {
+        padding-right: 40px;
+        display: inline;
+      }
+
+    }
+
+    .span2g {
+      color: red;
+      margin-left: 18px;
+    }
+
+    .maingdivg {
+      width: 100%;
+      flex-direction: column;
+      display: flex;
+      flex-wrap: wrap;
+
+    }
+
+
+    .subgdiv1g {
+      width: 100%;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .subgdiv2g {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      color: rgb(0, 0, 0);
+      flex-direction: column;
+      font-size: 33px;
+      font-weight: bold;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+
+    .meg {
+      width: 100%;
+      /* box-shadow: 3px 3px 8px rgb(0, 0, 0); */
+
+    }
+
+    .button1g {
+      padding: 10px;
+      border-radius: 20px;
+      border: none;
+      font-weight: bold;
+    }
+
+    .button1g:hover {
+      background-color: black;
+      box-shadow: 3px 3px 18px white;
+      color: white;
+    }
+
+
+
+    /* ........... */
+    .eheadg {
+      width: 100%;
+      font-weight: bold;
+      font-size: xx-large;
+      justify-content: center;
+      display: flex;
+      color: rgb(0, 0, 0);
+
+
+    }
+
+    #emaing {
+      width: 100%;
+
+
+      display: flex;
+      flex-direction: column;
+
+
+
+
+
+    }
+
+    .esubg {
+      width: 100%;
+      background-size: cover;
+      display: flex;
+    }
+
+    .esubg1 {
+      width: 100%;
+      height: max-content;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 3%;
+      font-size: large;
+
+
+    }
+
+    .esubg2 {
+      width: 100%;
+      height: max-content;
+
+
+      justify-content: center;
+      align-items: center;
+
+
+
+
+
+    }
+
+    .me1g {
+      width: 100%;
+
+    }
+
+    .hi1g {
+      font-size: 33px;
+      margin-top: 30px;
+    }
+
+    .iamg1 {
+      font-size: 33px;
+
+    }
+
+    .para1g {
+      margin-top: 4%;
+      line-height: 40px;
+      width: 100%;
+    }
+
+    .button2g {
+      padding: 10px;
+      border-radius: 20px;
+      border: none;
+      font-weight: bold;
+      margin-top: 33px;
+    }
+
+    .button2g:hover {
+      background-color: black;
+      box-shadow: 3px 3px 18px white;
+      color: white;
+    }
+
+
+    #maing3 {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      margin-top: 4%;
+      height: max-content;
+
+    }
+
+    .ssubg1 {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .ssubg2 {
+      width: 100%;
+    }
+
+    .me4g {
+      width: 100%;
+    }
+
+    .about11g {
+      width: 50%;
+      margin-top: 2%;
+    }
+
+    .video1g {
+      width: 100%;
+      height: max-content;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .cong {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 7%;
+      font-size: 33px;
+      font-weight: bold;
+    }
+
+    .button3g {
+      padding: 10px;
+      border-radius: 20px;
+      border: none;
+      font-weight: bold;
+      margin-top: 13px;
+      margin-bottom: 13px;
+    }
+
+    .button3g:hover {
+      background-color: black;
+      box-shadow: 3px 3px 18px white;
+      color: white;
+    }
+
+
+     /* footer section start */
+   footer{
+        height: max-content;
+        background-color: rgb(235, 235, 235);
+       margin-top: 2%;
+    }
+    .footersection{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .footerlogomain{
+       
+        display: flex;
+        width: 50%;
+        justify-content: space-around;
+
+    }
+    .footerlogoimg{
+        width: 45%;
+
+    }
+    .copyright{
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        font-size: large;
+    }
+/* ................................ */
+@media (max-width:1440px){
+   .aboutmedia{
+          display: none;
+        }
+}
+/*  */
+@media (max-width:1024px){
+   .aboutmedia{
+          display: none;
+        }
+
+     .sub{
+            width: 100%;
+            position: absolute;
+            margin-top: -580px;
+        }
+        .maindiv {
+            width: 100%;
+            height: 400px;
+            display: flex;
+            flex-wrap: wrap;
+
+        }
+        .subdiv2 {
+            width: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: rgb(255, 255, 255);
+            flex-direction: column;
+            font-size: 53px;
+            font-weight: bold;
+        }
+          .me1{
+      width: 100%;
+      height: 800px;
+      
+    }
+
+}
+/*  */
+@media (max-width:768px){
+.aboutme{
+  display: none;
+}
+ .aboutmedia{
+          display: unset;
+        }
+  .headingg {
+      display: flex;
+      justify-content: center;
+      font-weight: bold;
+      font-size: 58px;
+
+      color: rgb(255, 255, 255);
+    }
+
+    .subg {
+      width: 100%;
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      margin-top: -250px;
+
+    }
+
+    .span3g {
+
+    
+      font-size: 58px;
+
+    }
+
+}
+/*  */
+@media (max-width:425px){
+.aboutme{
+  display: none;
+}
+ .aboutmedia{
+          display: unset;
+        }
+  .headingg {
+      display: flex;
+      justify-content: center;
+      font-weight: bold;
+      font-size: 32px;
+
+      color: rgb(255, 255, 255);
+    }
+
+    .subg {
+      width: 100%;
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      margin-top: -140px;
+
+    }
+
+    .span3g {
+
+    
+      font-size: 32px;
+
+    }
+
+}
+/*  */
+@media (max-width:375px){
+.aboutme{
+  display: none;
+}
+ .aboutmedia{
+          display: unset;
+        }
+  .headingg {
+      display: flex;
+      justify-content: center;
+      font-weight: bold;
+      font-size: 32px;
+
+      color: rgb(255, 255, 255);
+    }
+
+    .subg {
+      width: 100%;
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      margin-top: -120px;
+
+    }
+
+    .span3g {
+
+    
+      font-size: 32px;
+
+    }
+
+}
+/*  */
+@media (max-width:320px){
+.aboutme{
+  display: none;
+}
+ .aboutmedia{
+          display: unset;
+        }
+}
+/* ............. */
+  </style>
+</head>
+
+<body>
+<div class="aboutme">
+      <div class="main">
+
+        <video class="video11" src="./assert/aboutme video.mp4" muted autoplay loop></video>
+    </div>
+    <div class="sub">
+        <div class="heading">
+
+            <span class="span3">&#128123;</span><span class="span1">A</span>BOUT <span class="span2">M</span><span
+                class="span3">E</span>
+        </div>
+
+        <div class="maindiv">
+
+            <div class="subdiv1">
+                <img class="me" src="./assert/me.png" alt="">
+            </div>
+
+            <div class="subdiv2">
+                <div class="hii">Hiii..!!</div>
+                <div class="iam">I am Gokul Nath..!!</div>
+                 <div class="more">
+                <a href="#emain "><button class="button1">More Details &#128071;</button></a>
+            </div>
+
+            </div>
+           
+        </div>
+
+    </div>
+<!-- ......... -->
+  <div id="emain">
+
+    <div class="ehead">EDUCATION!!</div>
+
+    <div class="esub">
+    
+
+      <div class="esub1">
+
+        <div class="hi1">
+          Hii..!!
+        </div>
+
+        <div class="iam1">
+          I am Gokulnath..!!
+        </div>
+        
+        <div class="para1">I completed my Higher Secondary School (HSC) at a Model School in Idappadi, Salem District. After that, I pursued and earned a Diploma in Computer Science Engineering (CSE) from Government Polytechnic College, Vanavasi, Salem.
+
+Currently, I am working as a Trainee at DCKAP Palli, where I am learning industry skills and gaining practical experience.
+
+Along my journey, I have achieved several milestones and personal achievements that have shaped my growth, both academically and professionally. I am passionate about learning new technologies, improving my skills, and contributing to meaningful projects.</div>
+
+
+          <div>
+            <a href="#main3"><button class="button2">More Details &#128071;</button></a>
+          </div>
+      </div>
+
+
+      <div class="esub2">
+        <img class="me1" src="./assert/me1.jpg" alt="">
+
+      </div> 
+ 
+    </div> 
+
+
+
+  </div>
+<!-- ........ -->
+   <div id="main3">
+   
+    <div class="ssub2">
+
+      <img class="me4" src="./assert/me4.jpg" alt="">
+    </div>
+<!--  -->
+     <div class="ssub1">
+      <div class="con"> speaking &#128071;</div>
+      <!--  -->
+      <div class="video1">
+        <video class="about11" src="./assert/aboutme video.mp4" muted autoplay loop></video>
+      </div>
+      <!--  -->
+      <div class="con"> HTML  & CSS&#128071;</div>
+      <div class="video1">
+        <video class="about11" src="./assert/aboutvideo.mp4" muted autoplay loop></video>
+      </div>
+     
+      <div class="con">
+            <a href="index.html"><button class="button3">  Go Back &#128072;</button></a>
+          </div>
+
+
+
+    </div>
+
+
+
+
+  </div>
+</div>
+
+
+  <!-- ///////////////// -->
+<div class="aboutmedia">
+    <!--  -->
+    <div class="maing">
+
+      <video class="video11g" src="./assert/aboutme video.mp4" muted autoplay loop></video>
+    </div>
+    <!--  -->
+    <div class="subg">
+      <div class="headingg">
+
+        <span class="span3g">&#128123;</span><span class="span1g">A</span>BOUT <span class="span2g">M</span><span
+          class="span3g">E</span>
+      </div>
+    </div>
+
+
+
+    <div class="maingdivg">
+
+      <div class="subgdiv1g">
+        <img class="meg" src="./assert/me.png" alt="">
+      </div>
+
+      <div class="subgdiv2g">
+        <div class="hiig">Hii..!!</div>
+        <div class="iamg">I am Gokul Nath..!!</div>
+        <div class="moreg">
+          <a href="#emaing "><button class="button1g">More Details &#128071;</button></a>
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <!-- ......... -->
+    <div id="emaing">
+      <div class="esubg2">
+        <img class="me1g" src="./assert/me1.jpg" alt="">
+
+      </div>
+
+
+      <div class="esubg">
+
+
+        <div class="esubg1">
+          <div class="eheadg">EDUCATION!!</div>
+
+          <div class="hi1g">
+            Hii..!!
+          </div>
+
+          <div class="iamg1">
+            I am Gokulnath..!!
+          </div>
+
+          <div class="para1g">I completed my Higher Secondary School (HSC) at a Model School in Idappadi, Salem District.
+            After that, I pursued and earned a Diploma in Computer Science Engineering (CSE) from Government Polytechnic
+            College, Vanavasi, Salem.
+
+            Currently, I am working as a Trainee at DCKAP Palli, where I am learning industry skills and gaining
+            practical experience.
+
+            Along my journey, I have achieved several milestones and personal achievements that have shaped my growth,
+            both academically and professionally. I am passionate about learning new technologies, improving my skills,
+            and contributing to meaningful projects.</div>
+
+
+          <div>
+            <a href="#maing3"><button class="button2g">Moreg Details &#128071;</button></a>
+          </div>
+        </div>
+
+
+
+
+      </div>
+
+
+
+    </div>
+    <!-- ........ -->
+    <div id="maing3">
+
+      <div class="ssubg2">
+
+        <img class="me4g" src="./assert/me4.jpg" alt="">
+      </div>
+      <!--  -->
+      <div class="ssubg1">
+        <div class="cong"> speaking &#128071;</div>
+        <!--  -->
+        <div class="video1g">
+          <video class="about11g" src="./assert/aboutme video.mp4" muted autoplay loop></video>
+        </div>
+        <!--  -->
+        <div class="cong"> HTML & CSS&#128071;</div>
+        <div class="video1g">
+          <video class="about11g" src="./assert/aboutvideo.mp4" muted autoplay loop></video>
+        </div>
+
+        <div class="cong">
+          <a href="index.html"><button class="button3g"> Go Back &#128072;</button></a>
+        </div>
+
+
+
+      </div>
+
+
+
+
+    </div>
+
+
+  </div> 
+  <!--  -->
+   <footer>
+        <div class="footersection">
+            <!-- copyright -->
+            <div class="copyright">
+                ...&copy;2025|@gokul...
+            </div>
+            <!--  -->
+        
+
+            <!-- footerlogo -->
+            <div class="footerlogomain">
+                <a class="footerlogo " href=""> <img class="footerlogoimg" src="./assert/f1.png" alt=""></a>
+                <a class="footerlogo " href=""> <img class="footerlogoimg" src="./assert/f2.png" alt=""></a>
+                <a class="footerlogo " href=""> <img class="footerlogoimg" src="./assert/f3.png" alt=""></a>
+                <a class="footerlogo " href=""> <img class="footerlogoimg" src="./assert/f4.png" alt=""></a>
+                <a class="footerlogo " href=""> <img class="footerlogoimg" src="./assert/f5.png" alt=""></a>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>

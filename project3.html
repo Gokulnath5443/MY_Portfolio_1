@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 3</title>
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+        }
+
+    
+
+        .main {
+            height: max-content;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+  .title {
+            font-weight: bold;
+            font-size: 32px;
+            justify-content: center;
+            background-color: rgb(240, 238, 238);
+            width: 100%;
+            display: flex;
+            align-items: center;
+            
+            padding: 13px 0px 17px 0px;
+        }
+
+        .span1 {
+            color: rgb(255, 0, 0);
+            position: sticky;
+
+        }
+
+
+        .span2 {
+            text-decoration: underline red;
+        }
+
+
+        .span3 {
+            text-decoration: underline rgb(0, 0, 0);
+        }
+
+        .pothysvideodiv {
+            /* background-color: rgb(192, 255, 255); */
+            width: 80%;
+            height: max-content;
+            margin-top: 3%;
+            box-shadow: 3px 3px 12px black;
+        }
+
+        video {
+            width: 100%;
+            opacity: 0.7;
+        }
+
+        .gitimage {
+            display: flex;
+            justify-content: center;
+            height: max-content;
+            margin: 2% 0%;
+            align-items: center;
+            flex-direction: column;
+            line-height: 45px;
+        }
+
+        .agit {
+
+            display: flex;
+            justify-content: center;
+            height: max-content;
+
+            align-items: center;
+
+        }
+
+        .git {
+            width: 16%;
+        }
+
+        .githead {
+            font-weight: bold;
+            text-decoration: underline;
+            color: rgb(255, 0, 0);
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .link {
+            margin-top: 3%;
+            display: flex;
+            width: 100%;
+
+        }
+
+        .rep {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            line-height: 45px;
+        }
+
+        .dep {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-right: 5px solid rgb(255, 0, 0);
+            line-height: 45px;
+
+        }
+
+        .dephead {
+            font-weight: bold;
+            font-size: 29px;
+        }
+
+        .dephead:hover {
+            text-decoration: underline;
+        }
+
+        .rephead {
+            font-weight: bold;
+            font-size: 29px;
+        }
+
+        .rephead:hover {
+            text-decoration: underline;
+        }
+
+        .shortrev {
+            display: flex;
+            justify-content: start;
+            padding-right: 55%;
+            font-size: x-large;
+            font-weight: bold;
+
+        }
+
+        .shortrev:hover {
+            text-decoration: underline;
+        }
+
+        .click {
+            border: 1px solid black;
+            padding: 5px 5px;
+            border-radius: 6px;
+        }
+
+        .click:hover {
+            background-color: black;
+            color: white;
+        }
+
+        .output {
+            margin-top: 3%;
+        }
+
+        .picture {
+            margin-top: 3%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            row-gap: 0;
+        }
+
+        .picture1 {
+            width: 60%;
+            margin: auto;
+        }
+
+        .pic {
+            width: 100%;
+        }
+
+        .more {
+            margin-top: 3%;
+
+        }
+
+        .more1 {
+
+            font-weight: bold;
+            font-size: 22px;
+        }
+
+        .more1:hover {
+            text-decoration: underline;
+        }
+
+        .mainmoreproject {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            gap: 30px;
+            margin-top: 3%;
+        }
+        .submoreproject{
+            display: flex;
+            flex-direction: column;
+            
+            width: 25%;
+            row-gap: 10px;
+            
+        }
+        .Project1{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            height: 150px;
+        }
+        .Projectname{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            font-size: large;
+        }
+        .Projectname:hover{
+            text-decoration: underline;
+        }
+        .backimg{
+            width: 30px;
+            
+        }
+
+     /* footer section start */
+   footer{
+        height: max-content;
+        background-color: rgb(235, 235, 235);
+       margin-top: 2%;
+    }
+    .footersection{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .footerlogomain{
+       
+        display: flex;
+        width: 50%;
+        justify-content: space-around;
+
+    }
+    .footerlogoimg{
+        width: 45%;
+
+    }
+    .copyright{
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        font-size: large;
+    }
+        .con {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 5%;
+      font-size: 33px;
+      font-weight: bold;
+    }
+
+    .button3 {
+      padding: 10px;
+      border-radius: 20px;
+      border: none;
+      font-weight: bold;
+      margin-top: 13px;
+      margin-bottom: 13px;
+    }
+
+    .button3:hover {
+      background-color: black;
+      box-shadow: 3px 3px 18px white;
+      color: white;
+    }
+/* ................................ */
+    
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="title">
+            
+            <div class="tittile"><span class="span3">Project</span> - <span class="span1">C</span><span
+                class="span2">ontract <span class="span1">M</span>anagement</span></div>
+        </div>
+        <!--  -->
+
+        <div class="gitimage"><a class="agit" href="https://github.com/"><img class="git"
+                    src="./assert/github-logo.png" alt=""></a>
+                    <!-- <a class="githead"
+                href="https://github.com/Gokulnath5443/Pothysmart.git">github</a> -->
+            
+            </div>
+        <!--  -->
+        <div class="shortrev">
+            Short clip:
+        </div>
+        <!--  -->
+        <div class="pothysvideodiv">
+            <video src="./assert/a2.webm" autoplay muted loop></video>
+        </div>
+        <!--  -->
+
+        <!--  -->
+        <div class="shortrev output"> Output review:</div>
+        <div class="picture">
+            <div class="picture1">
+                <img class="pic" src="./assert/c1.png" alt="">
+                <img class="pic" src="./assert/c2.png" alt="">
+                <img class="pic" src="./assert/c3.png" alt="">
+                <img class="pic" src="./assert/c4.png" alt="">
+                <img class="pic" src="./assert/c5.png" alt="">
+                <img class="pic" src="./assert/c6.png" alt="">
+                <img class="pic" src="./assert/c7.png" alt="">
+                <!-- <img class="pic" src="./assert/c8.png" alt="">
+                <img class="pic" src="./assert/c9.png" alt="">
+                <img class="pic" src="./assert/c10.png" alt="">
+                <img class="pic" src="./assert/c11.png" alt=""> -->
+
+
+
+            </div>
+
+        </div>
+        <!--  -->
+        <div class="link">
+            <div class="dep">
+                <div class="dephead">Deployments</div>
+                <div><a class="click" href="https://gokulnath5443.github.io/Assessment_Contract_Management/">click</a></div>
+            </div>
+            <!--  -->
+            <div class="rep">
+                <div class="rephead">Repositories</div>
+                <div><a class="click" href="https://github.com/Gokulnath5443/Assessment_Contract_Management.git">click</a></div>
+            </div>
+        </div>
+        <!--  -->
+        <div class="more"><a class="more1" href="">More Project</a></div>
+    </div>
+    <!--  -->
+    <div class="mainmoreproject">
+        <div class="submoreproject">
+            <div class="Project1">
+                <a href="project1.html">
+                    <video src="./assert/pothys video.webm" muted autoplay loop></video>
+                </a>
+            </div>
+            <div class="Projectname"><a href="project1.html">project A</a></div>
+        </div>
+        <div class="submoreproject">
+            <div class="Project1">
+                 <a href="project2.html">
+                    <video src="./assert/a1.webm" muted autoplay loop></video>
+                </a>
+            </div>
+            <div class="Projectname"><a href="project2.html">project B</a></div>
+        </div>
+        <div class="submoreproject">
+            <div class="Project1">
+                 <a href="project4.html">
+                    <video src="./assert/a3.webm" muted autoplay loop></video>
+                </a>
+            </div>
+            <div class="Projectname"><a href="project4.html">project D</a></div>
+        </div>
+        <div class="submoreproject">
+            <div class="Project1">
+                 <a href="project5.html">
+                    <video src="./assert/a4.webm" muted autoplay loop></video>
+                </a>
+            </div>
+            <div class="Projectname"><a href="project5.html">project E</a></div>
+        </div>
+
+    </div>
+
+   <div class="con">
+            <a href="project.html"><button class="button3">  Go Back &#128072;</button></a>
+          </div>
+   <footer>
+        <div class="footersection">
+            <!-- copyright -->
+            <div class="copyright">
+                ...&copy;2025|@gokul...
+            </div>
+            <!--  -->
+        
+
+            <!-- footerlogo -->
+            <div class="footerlogomain">
+                <a class="footerlogo " href=""> <img class="footerlogoimg" src="./assert/f1.png" alt=""></a>
+                <a class="footerlogo " href=""> <img class="footerlogoimg" src="./assert/f2.png" alt=""></a>
+                <a class="footerlogo " href=""> <img class="footerlogoimg" src="./assert/f3.png" alt=""></a>
+                <a class="footerlogo " href=""> <img class="footerlogoimg" src="./assert/f4.png" alt=""></a>
+                <a class="footerlogo " href=""> <img class="footerlogoimg" src="./assert/f5.png" alt=""></a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
